@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorites</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <h1>Your Favorite Locations</h1>
+    
+
+    <!-- Back Button Below the Text -->
+    <button class="btn back-btn" onclick="window.location.href='index.html'">Back</button>
+
+    <div class="favorites-container">
+        <ul class="favorites-list" data-favoritesList></ul>
+    </div>
+</div>
+<!-- Favorites Section -->
+<div class="favorites-container">
+    <ul class="favorites-list" data-favoritesList></ul>
+</div>
+
+<script src="script.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", updateFavoritesUI);
+</script>
+
+</body>
+</html>
